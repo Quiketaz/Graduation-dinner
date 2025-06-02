@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-F-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Dinner for Jocsan & Josue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 sm:p-6 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+
+    <div class="invitation-card bg-black border border-amber-400/50 w-full max-w-2xl p-6 sm:p-10 md:p-12 relative">
+        <div class="decoration-top"></div>
+        <div class="decoration-bottom"></div>
+
+        <div id="confetti-container" class="absolute inset-0 pointer-events-none overflow-hidden">
+            </div>
+
+        <header class="text-center mb-8">
+            <h1 class="card-header text-4xl sm:text-5xl md:text-6xl font-bold gradient-text">
+                You're Invited!
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 mt-3">Join us for a</p>
+            <h2 class="text-3xl sm:text-4xl font-semibold text-amber-300 mt-1 card-subheader">
+                Graduation Dinner
+            </h2>
+        </header>
+
+        <section class="text-center mb-8">
+            <p class="text-lg text-gray-200">In honor of the amazing achievements of</p>
+            <h3 class="text-4xl sm:text-5xl font-bold text-amber-400 mt-3 mb-2 card-subheader">
+                Jocsan & Josue
+            </h3>
+            <img src="https://placehold.co/150x150/1A1A1A/FFD700?text=Grads!" alt="Graduation Cap Icon" class="mx-auto my-6 w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-amber-300/70 shadow-lg shadow-amber-500/30" onerror="this.src='https://placehold.co/150x150/1A1A1A/FFD700?text=Error'; this.alt='Placeholder Image';">
+            <p class="text-md text-gray-300 italic">Celebrating their hard work and bright futures!</p>
+        </section>
+
+        <section class="mb-8 px-4 sm:px-0">
+            <div class="grid md:grid-cols-2 gap-6 text-gray-200">
+                <div class="bg-gray-800/50 border border-amber-400/30 p-6 rounded-lg shadow-sm hover:shadow-amber-400/20 transition-shadow duration-300">
+                    <h4 class="text-xl font-semibold text-amber-300 mb-2 card-subheader">Date & Time</h4>
+                    <p class="text-lg">Saturday, June 7, 2025</p>
+                    <p class="text-lg">6:00 PM</p>
+                </div>
+                <div class="bg-gray-800/50 border border-amber-400/30 p-6 rounded-lg shadow-sm hover:shadow-amber-400/20 transition-shadow duration-300">
+                    <h4 class="text-xl font-semibold text-amber-300 mb-2 card-subheader">Location</h4>
+                    <p class="text-lg">Our Home</p>
+                    <p class="text-lg">27206 Cotton View Ln</p>
+                    <p class="text-lg">Sunterra</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center mb-8">
+            <h4 class="text-xl font-semibold text-amber-300 mb-2 card-subheader">RSVP</h4>
+            <p class="text-lg text-gray-200">Please RSVP by [RSVP Date - e.g., June 5th] so we can make arrangements.</p>
+            <p class="text-lg text-gray-200">Call or Text: <span class="text-amber-300">832-674-5401</span></p>
+            <!--
+            <a href="mailto:your_email@example.com?subject=RSVP%20for%20Jocsan%20&%20Josue's%20Graduation%20Dinner"
+               class="mt-6 inline-block bg-amber-500 hover:bg-amber-600 text-black font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-lg">
+                RSVP via Email
+            </a>
+            -->
+        </section>
+
+        <footer class="text-center pt-8 border-t border-amber-400/30">
+            <p class="text-sm text-gray-400">We can't wait to celebrate with you!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

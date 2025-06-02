@@ -1,0 +1,63 @@
+/* style.css */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Background is handled by Tailwind: bg-gradient-to-br from-gray-900 via-black to-gray-800 */
+}
+
+.card-header {
+    font-family: 'Playfair Display', serif; /* Existing elegant font */
+}
+
+.card-subheader {
+    font-family: 'Cinzel', serif; /* A more classic, stately font for subheadings */
+}
+
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Gold gradient for main header */
+    background-image: linear-gradient(to right, #FDE047, #FBBF24, #F59E0B); /* Light yellow gold to deeper amber */
+}
+
+.invitation-card {
+    /* Tailwind handles shadows and border-radius. Base background is bg-black */
+    /* border: 1px solid #FFD700; /* Gold border - or use Tailwind border-amber-400 */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px -5px rgba(255, 215, 0, 0.1), 0 10px 10px -5px rgba(255, 215, 0, 0.08); /* Subtle gold shadow */
+}
+
+.decoration-top, .decoration-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    /* Gold-themed SVG pattern - you might want to create a custom one or use a simpler border */
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q 25 20, 50 50 T 100 50' stroke='%23FBBF24' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); /* Amber wave */
+    background-repeat: repeat-x;
+    opacity: 0.4; /* Softer opacity */
+}
+
+.decoration-top {
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.decoration-bottom {
+    bottom: 0;
+}
+
+.confetti-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0.8; /* Slightly more opaque for gold */
+}
+
+/* Keyframes for falling animation for confetti dots */
+@keyframes fall {
+    0% { transform: translateY(-20px) rotate(0deg) scale(1); opacity: 0.8; }
+    100% { transform: translateY(100px) rotate(360deg) scale(0.5); opacity: 0; } /* Added rotation */
+}
